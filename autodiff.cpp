@@ -12,8 +12,8 @@ double derivative(const Dual &expr, const Dual &var)
 
 int main()
 {
-    Dual x(1.0, 1.0); // Dual object for x with value 5 and derivative 1
-    Dual y(1.0, 1.0); // Dual object for y with value 3 and derivative 0
+    Dual x(1.0); // Dual object for x with value 5 and derivative 1
+    Dual y(1.0); // Dual object for y with value 3 and derivative 0
 
     Dual expr = y * y + exp(x); // Calculate the expression y^2 + exp(x)
 
