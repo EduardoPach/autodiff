@@ -30,7 +30,7 @@ class Dual
 {
 public:
     // Constructors
-    Dual(double value = 0.0, double derivative = 0.0) : value_(value), derivative_(derivative) {}
+    Dual(double value = 0.0, double derivative = 1.0) : value_(value), derivative_(derivative) {}
 
     // Accessors
     double value() const { return value_; }
