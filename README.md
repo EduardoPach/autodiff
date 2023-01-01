@@ -64,4 +64,4 @@ int main()
 }
 ```
 
-This is far from ideal, so the next step is to create a function that does this, but I'm probably making some mistakes in the calculus side.
+This is far from ideal, next step is to create a function that deals with this.
