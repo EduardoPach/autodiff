@@ -30,13 +30,15 @@ class Dual
 {
 public:
     // Constructors
-    Dual(double value, double derivative) : value_(value), derivative_(derivative) {}
-    Dual(double value) : value_(value), derivative_(0.0) {}
-    Dual() : value_(0.0), derivative_(0.0) {}
+    Dual(double value = 0.0, double derivative = 0.0) : value_(value), derivative_(derivative) {}
 
     // Accessors
     double value() const { return value_; }
     double derivative() const { return derivative_; }
+
+    // Mutators
+    void setValue(double val) { value_ = val; }
+    void setDerivative(double der) { derivative_ = der; }
 
     // Unary arithmetic operators
     Dual operator-() const { return Dual(-value_, -derivative_); }
